@@ -22,15 +22,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/router4/[id4]/[...slug]": [
+    "/events": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/router4/[id4]/[...slug].js"
+      "static/chunks/pages/events.js"
     ],
-    "/router4/[id4]/[router4Inner]": [
+    "/router3/[...slug]": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/router4/[id4]/[router4Inner].js"
+      "static/chunks/pages/router3/[...slug].js"
     ]
   },
   "ampFirstPages": []

@@ -1,5 +1,6 @@
 
-function HomePage() {
+
+function HomePage () {
   return (
     <div>
       <h2>home page</h2>

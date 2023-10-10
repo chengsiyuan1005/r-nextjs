@@ -1,0 +1,33 @@
+.eventsPage {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ace4e1d9;
+}
+
+.title {
+  width: 100vw;
+  text-align: center;
+}
+
+.icons {
+  width: 100vw;
+  height: 4rem;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.icons span {
+  width: 4rem;
+}
+
+.icons span svg {
+  width: 2rem;
+  height:  2rem;
+}
+
+.select {
+  width: 100vw;
+  height: 3.125rem;
+  background-color: #fff;
+}

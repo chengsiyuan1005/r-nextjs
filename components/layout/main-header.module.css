@@ -1,0 +1,17 @@
+.header {
+  width: 100vw;
+  height: 3.125rem;
+  background-color: #15a4a7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.toHome {
+  width: 4rem;
+}
+
+.toEvents {
+  width: 4rem;
+}

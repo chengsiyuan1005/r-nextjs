@@ -2,7 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/router4/[id4]": "pages/router4/[id4].js",
-  "/router4/[id4]/[router4Inner]": "pages/router4/[id4]/[router4Inner].js",
-  "/router4/[id4]/[...slug]": "pages/router4/[id4]/[...slug].js"
+  "/events": "pages/events.js",
+  "/router3/[...slug]": "pages/router3/[...slug].js"
 }
