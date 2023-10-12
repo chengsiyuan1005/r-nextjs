@@ -1,6 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+---
+- created project by create-next-app
+---
 
-## Getting Started
+
+
+## 0. Getting Started
 
 First, run the development server:
 
@@ -23,29 +27,52 @@ bun dev
 
 ```
 
----
-  components
-    events
-      events-search.js
-    icons
-      arrow-icon.js
-      download-icon.js
-    layout
-      layout.js
-      main-header.js
-  pages
-    _app.js
-    index.js // home页面
-    router1
-      index.js // 一般路由
-    router2
-      [id2]/index.js // 一般动态路由-属性id2
-    router3
-      [..slug].js // 动态路由数组-属性-数组slug
-    router4
-      index.js // 一般路由
-      [router4Inner].js // 一般动态路由-属性router4Inner
-      [id4]/[...slug].js // 双层动态路由, 第一层属性id4, 第二层属性-数组slug
-    events
-      index.js // events页面
----
+
+
+## 1. 目录结构
+
+```json
+|-- components 
+|   |-- events
+|   |   |-- events-search.js
+|   |   |-- events-search.module.css
+|   |-- icons
+|   |   |-- arrow-icon.js
+|   |   |-- download-icon.js
+|   |-- layout
+|   |   |-- layout.js
+|   |   |-- main-header.js
+|   |   |-- main-header.module.css
+|   |-- ui
+|       |-- button.js
+|       |-- button.module.css
+|-- pages
+|   |-- index.js // home页面
+|   |-- _app.js 
+|   |-- api
+|   |   |-- hello.js
+|   |-- events
+|   |   |-- index.js // events页面
+|   |   |-- index.module.css
+|   |-- router1 
+|   |   |-- index.js // 一般路由
+|   |-- router2
+|   |   |-- index.js
+|   |   |-- [id2]
+|   |       |-- index.js // 一般动态路由-属性id2
+|   |-- router3
+|   |   |-- [...slug].js // 动态路由数组-属性-数组slug
+|   |-- router4
+|       |-- index.js
+|       |-- [id4]
+|           |-- index.js
+|           |-- [...slug].js // 双层动态路由, 第一层属性id4, 第二层属性-数组slug
+|           |-- [router4Inner].js // 双层一般动态路由-第一属性id4, 第二属性router4Inner
+|-- public
+|   |-- favicon.ico
+|   |-- next.svg
+|   |-- vercel.svg
+|-- styles
+|   |-- globals.css
+```
+
