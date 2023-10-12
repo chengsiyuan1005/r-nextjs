@@ -76,3 +76,10 @@ bun dev
 |   |-- globals.css
 ```
 
+
+
+
+
++ nextjs 默认预渲染所有没有动态数据的页面
+
++ process.cwd() 指node工作的目录
