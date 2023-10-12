@@ -31,7 +31,7 @@ bun dev
 
 ## 1. 目录结构
 
-```json
+```js
 |-- components 
 |   |-- events
 |   |   |-- events-search.js
