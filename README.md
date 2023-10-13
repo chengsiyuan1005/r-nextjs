@@ -54,6 +54,9 @@ bun dev
 |   |-- events
 |   |   |-- index.js // events页面
 |   |   |-- index.module.css
+|   |-- products
+|   |   |-- index.js // getStaticProps(context)
+|   |   |-- [pid].js // getStaticProps(context) 结合 getStaticPaths()
 |   |-- router1 
 |   |   |-- index.js // 一般路由
 |   |-- router2
@@ -81,5 +84,5 @@ bun dev
 
 
 + nextjs 默认预渲染所有没有动态数据的页面
-
++ []文件夹 或者 [].js 文件是动态的, 浏览器不会预先render (因为浏览器不知道要渲染多少页)
 + process.cwd() 指node工作的目录
