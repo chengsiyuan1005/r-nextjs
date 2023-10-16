@@ -19,7 +19,7 @@ bun dev
 ```
 
 ```markdown
-
+	
  github address: https://github.com/mschwarzmueller/nextjs-course-code
 
  2023/10/11 branch study - 08-pr-api-routes
@@ -77,6 +77,21 @@ bun dev
 |   |-- vercel.svg
 |-- styles
 |   |-- globals.css
+```
+
+
+
+## 2. 
+
+```js
+// fetch
+	
+fetch('https://mock.apifox.cn/m1/3421431-0-default/list-data')
+    .then((response) => response.json())
+    .then(data => {
+      console.log('data', data)
+    })
+    
 ```
 
 

@@ -41,15 +41,23 @@ export async function getStaticProps (context) {
 }
 
 export async function getStaticPaths() {
+  const filePath = path.join(process.cwd(), 'data', 'product', 'demo.json')
+  const jsonData = await fs.readFile(filePath)
+  const data = JSON.parse(jsonData)
+  
+  const ids = data.products.map(product => product.id)
+  const params = ids.map(id => ({params: {pid: id}}))
+  
   return {
-    paths: [
-      {params: {pid: 'p1'}},
+    paths: params, // 属于下面方式的优化 -- 这样相当于 fallback: true了
+    // paths: [
+    //   {params: {pid: 'p1'}},
      
-    ],
+    // ],
     // 如果设置fallback: false, 只会加载paths中指定的数据
     // 如果设置fallback: true, 即使数据没有预先保存在浏览器, 也会动态请求服务器进行加载
     // 如果设置fallback: 'blocking', 会等待数据加载完再render页面
-    fallback: true, 
+    fallback: false, 
   }
 }
 
