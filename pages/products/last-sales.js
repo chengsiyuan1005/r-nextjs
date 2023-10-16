@@ -4,28 +4,26 @@ import useSWR from 'swr';
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 function LastSalesPage(props) {
-  const [sales, setSales] = useState()
+  const [sales, setSales] = useState(props.sales)
 
   const {data, error, isLoading} = useSWR(
     '/api-mock/list-data', fetcher
   )
 
   useEffect(() => {
-    console.log('first', isLoading)
-
-  
     if (data) {
-      console.log('data', data, isLoading)
       setSales(data)
-      console.log('sales', sales) //useState是异步的
-
     }
   }, [data])
 
   if (error) {
     return <h2>Failed to load.</h2>
   }
-  if (isLoading || !sales) {
+  // if (isLoading || !sales) {
+  //   return <h2>Loading...</h2>
+  // }
+
+  if (isLoading && !sales) { // sales 预加载， 不存在为空
     return <h2>Loading...</h2>
   }
 
@@ -46,3 +44,12 @@ function LastSalesPage(props) {
 }
 
 export default LastSalesPage;
+
+// 预加载
+export async function getStaticProps() {
+
+  const response = await fetch('https://mock.apifox.cn/m1/3421431-0-default/list-data')
+  const data = await response.json()
+
+  return {props: {sales: data}, revalidate: 30}
+}

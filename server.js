@@ -4,7 +4,7 @@ const next = require('next')
 const { createProxyMiddleware } = require('http-proxy-middleware')
 const devProxy = {
   '/api-mock': {
-    target: 'https://mock.apifox.cn/m1/3421431-0-default', // 端口自己配置合适的
+    target: 'https://mock.apifox.cn/m1/3421431-0-default', // apiFox mock
     pathRewrite: {
       '^/api-mock': '/'
     },
