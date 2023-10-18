@@ -4,7 +4,7 @@ import classes from './events-search.module.css'
 
 function EventsSearch (props) {
   const [yearList, setYearList] = useState(['2023', '2022', '2021', '2020', '2019', '2018'])
-  const [monthList, setMonthList] = useState(['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'])
+  const [monthList, setMonthList] = useState(['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'])
 
   
   const yearInputRef = useRef()

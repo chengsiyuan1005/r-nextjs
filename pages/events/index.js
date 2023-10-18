@@ -12,7 +12,7 @@ function EventsPage () {
   const eventSearchHandler = (year, month) => {
     console.log('this year and month', year, month)
 
-    router.push(`/router3/${year}/${month}`)
+    router.push(`/events/${year}/${month}`)
     
   }
   
