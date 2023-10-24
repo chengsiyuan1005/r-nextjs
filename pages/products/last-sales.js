@@ -1,4 +1,5 @@
 import {useEffect, useState} from 'react';
+import Image from 'next/image';
 import useSWR from 'swr';
 
 
@@ -36,6 +37,9 @@ function LastSalesPage(props) {
           sales.map(item => <li key={item.id}>
               <h4>{item.title}</h4>
               <p>{item.description}</p>
+              {
+                // <Image src={item.image} alt={item.title} width={300} height={300}/>
+              }
               <img src={item.image} alt="" />
             </li>)
         }
